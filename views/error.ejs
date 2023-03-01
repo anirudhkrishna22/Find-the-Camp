@@ -1,0 +1,18 @@
+<!-- this file will be rendered when error occurs -->
+
+<!-- the below line when called inside a template, requests that the output of the current template,
+be passed to the given view as the body local -->
+<% layout('layouts/boilerplate')%>
+
+<!-- display alert when something goes wrong (code from docs for bootstrap alert)-->
+<!-- class row and col added for styling -->
+<div class="row"> 
+    <div class="col-6 offset-3">
+        <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading"><%= err.message %></h4>
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        </div>
+    </div>
+</div>
